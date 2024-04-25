@@ -1,3 +1,18 @@
 fn main() -> void { 
   println("Hello, World!");
+
+  let a: i32 = 0;
+  let b: i32 = 1;
+  let temp: i32 = 0;
+  let c: i32 = 0;
+
+  loop {
+    c = a + b;
+    a = b;
+    b = c;
+    print_int(c);
+
+    println("");
+    temp = temp + 1;
+  } while temp < 30;
 }
